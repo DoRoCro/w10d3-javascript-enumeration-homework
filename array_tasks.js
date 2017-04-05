@@ -61,9 +61,17 @@ var arrayTasks = {
 		return result
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-		
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		// var step1 = this.square(arr)
+		// console.log(step1);		
+		// var step2 = step1.filter(function(x){
+			// return x % 2 == 0
+		// })
+		// return this.sum(step2)
+		return this.sum(this.square(arr).filter(function(x){
+			return x % 2 == 0
+		}))
+	}
 
 }
 

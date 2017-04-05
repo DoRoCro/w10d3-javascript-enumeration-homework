@@ -18,14 +18,15 @@ var arrayTasks = {
 		for (var i = index; i < arr.length ; i++){
 			newArray.push(arr[i])
 		}
-		console.log( newArray)
 		return newArray		
 	},
 
 
-	// square: function (arr) {
-		
-	// },
+	square: function (arr) {
+		return arr.map( function(x) {
+			return x * x
+		})		
+	},
 
 	// sum: function (arr) {
 		

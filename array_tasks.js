@@ -28,9 +28,11 @@ var arrayTasks = {
 		})		
 	},
 
-	// sum: function (arr) {
-		
-	// },
+	sum: function (arr) {
+		return arr.reduce(function(acc, cur, index){
+			return acc + cur
+		}, 0)		
+	},
 
 	// findDuplicates: function (arr) {
 		

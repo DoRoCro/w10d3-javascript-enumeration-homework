@@ -9,9 +9,19 @@ var arrayTasks = {
 		return newArray
 	},
 
-	// insertAt: function (arr, itemToAdd, index) {
-		
-	// },
+	insertAt: function (arr, itemToAdd, index) {
+		var newArray = []
+		for (var i = 0; i < index; i++) {
+			newArray.push(arr[i])
+		}
+		newArray.push(itemToAdd)
+		for (var i = index; i < arr.length ; i++){
+			newArray.push(arr[i])
+		}
+		console.log( newArray)
+		return newArray		
+	},
+
 
 	// square: function (arr) {
 		

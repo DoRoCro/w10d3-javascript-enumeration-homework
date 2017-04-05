@@ -34,9 +34,12 @@ var arrayTasks = {
 		}, 0)		
 	},
 
-	// findDuplicates: function (arr) {
-		
-	// },
+	findDuplicates: function (arr) {
+		return arr.filter(function(x,index){
+			return 	(arr.lastIndexOf(x) > arr.indexOf(x))  && 
+							(index == arr.indexOf(x))
+		})		
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 		
